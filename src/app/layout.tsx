@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Mona_Sans } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+
+const mona_Sans = Mona_Sans({
+  variable: "--font-mono_sans",
   subsets: ["latin"],
 });
 
@@ -23,9 +20,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html className="" lang="en">
+       <head>
+        <script src="/theme-toggle.js" />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${mona_Sans.variable}  antialiased`}
       >
         {children}
       </body>
