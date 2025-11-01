@@ -23,4 +23,17 @@ function toggleTheme() {
   }
 }
 
+// Function to get the current theme
+export function getCurrentTheme() {
+  if (typeof window !== "undefined") {
+    const userPreference = localStorage.getItem("theme");
+    if (userPreference) {
+      return userPreference;
+    }
+    const systemPreference = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    return systemPreference ? "dark" : "light";
+  }
+  return "light"; // Default to light if window is undefined
+}
+
 export default toggleTheme;

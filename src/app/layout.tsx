@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Mona_Sans } from "next/font/google";
 import "./globals.css";
-
-
+import Navbar from "./components/navbar";
+import { ThemeProvider } from "@/utils/ThemeContext";
 
 const mona_Sans = Mona_Sans({
   variable: "--font-mono_sans",
@@ -21,13 +21,25 @@ export default function RootLayout({
 }>) {
   return (
     <html className="" lang="en">
-       <head>
-        <script src="/theme-toggle.js" />
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const userPreference = localStorage.getItem('theme');
+                const systemPreference = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                const theme = userPreference || (systemPreference ? 'dark' : 'light');
+                document.documentElement.classList.toggle('dark', theme === 'dark');
+              })();
+            `,
+          }}
+        />
       </head>
-      <body
-        className={`${mona_Sans.variable}  antialiased`}
-      >
-        {children}
+      <body className={`${mona_Sans.className} antialiased`}>
+        <ThemeProvider>
+          <Navbar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
