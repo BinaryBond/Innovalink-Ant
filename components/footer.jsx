@@ -33,7 +33,7 @@ export default function footer() {
               />
             </svg>
             <p className="dark:text-neutral-0 text-neutral-5  ">2025</p>
-            <div className="w-[48.5px] dark:bg-primary-0 h-px bg-neutral-5 " />
+            <div className="w-[48.5px] dark:bg-primary-0 h-[0.5px] bg-neutral-5 animate-pulse transition  " />
           </div>
           <div className="flex flex-row gap-2  pr-8 ">
           <IconButton

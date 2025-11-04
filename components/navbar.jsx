@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed bg-transparent px-4 w-full top-0">
+      <nav className="fixed bg-transparent px-4 w-full z-10 top-0">
         <div className="flex w-full max-w-7xl place-self-center justify-between">
           <img
             className="w-24 h-24"
