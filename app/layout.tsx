@@ -4,8 +4,9 @@ import "./globals.css";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import { ThemeProvider } from "@/utils/ThemeContext";
-import BackgroundVideos from "@/components/BackgroundVideos";
 import { ToastContainer } from "@/components/ui/toast";
+import BackgroundAnimations from "@/components/backgroundAnimations";
+
 
 const mona_Sans = Mona_Sans({
   variable: "--font-mono_sans",
@@ -44,8 +45,8 @@ export default function RootLayout({
       <body className={`${mona_Sans.className} antialiased`}>
         <ThemeProvider>
           {/* Background Videos */}
-          <BackgroundVideos />
-
+          {/* <BackgroundVideos /> */}
+          <BackgroundAnimations />
           <Navbar />
             <ToastContainer />
           {children}
