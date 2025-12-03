@@ -291,10 +291,10 @@ export default function Home() {
         <div className="mx-auto flex flex-col px-4 md:px-0 items-center gap-[25px] max-w-[583px] w-full justify-center">
           <div className="w-full flex flex-col gap-[15px] md:gap-0">
             <div className="w-full flex flex-col  items-center">
-              <h3 className="text-primary-6 tracking-[11px] leading-[15px] text-center w-fit -mr-[11px] md:-mr-3.5 lg:-mr-[22.2px]  md:tracking-[14px] lg:tracking-[22.2px]  text-[12px] text-sm md:text-lg lg:text-xl font-light dark:text-neutral-0 hero-heading">
+              <h1 className="text-primary-6 tracking-[11px] leading-[15px] text-center w-fit -mr-[11px] md:-mr-3.5 lg:-mr-[22.2px]  md:tracking-[14px] lg:tracking-[22.2px]  text-[12px] text-sm md:text-lg lg:text-xl font-light dark:text-neutral-0 hero-heading">
                 INOVALINK WEBSITE
-              </h3>
-              <h1 className="md:hidden dark:text-neutral-0 text-neutral-6 w-full items-center flex flex-col text-hero-clamp font-bold coming-soon">
+              </h1>
+              <h2 className="md:hidden dark:text-neutral-0 text-neutral-6 w-full items-center flex flex-col text-hero-clamp font-bold coming-soon">
                 <span className="flex leading-[92.188%] ">
                   <span className="dark:bg-clip-text dark:text-transparent dark:bg-linear-to-b from-white via-white via-75% to-[#999]">
                     C
@@ -316,9 +316,9 @@ export default function Home() {
                 <span className="hidden md:block dark:bg-clip-text dark:text-transparent dark:bg-linear-to-b from-white via-white via-70% to-black">
                   SOON
                 </span>
-              </h1>
+              </h2>
 
-              <h1 className="dark:text-neutral-0 text-neutral-6 w-full items-center hidden md:flex flex-col md:text-8xl lg:text-9xl font-bold coming-soon">
+              <h2 className="dark:text-neutral-0 text-neutral-6 w-full items-center hidden md:flex flex-col md:text-8xl lg:text-9xl font-bold coming-soon">
                 <span className="flex leading-[92.188%] ">
                   <span className="dark:bg-clip-text dark:text-transparent dark:bg-linear-to-b from-white via-white via-75% to-[#999]">
                     C
@@ -340,7 +340,7 @@ export default function Home() {
                 <span className="hidden md:block dark:bg-clip-text dark:text-transparent dark:bg-linear-to-b from-white via-white via-70% to-black">
                   SOON
                 </span>
-              </h1>
+              </h2>
             </div>
 
             <p className="dark:text-neutral-4 text-neutral-5 text-[14px] px-2.5 leading-4 max-w-[374px] sm:max-w-[450px] mx-auto text-center hero-paragraph">
@@ -454,9 +454,9 @@ export default function Home() {
         <div className="flex flex-col gap-[37px] md:gap-16  h-fit">
           <div className="text-center flex flex-col gap-2.5 mx-auto max-w-[793px]">
             <div className="max-w-[574px] mx-auto">
-              <h1 className="dark:text-transparent dark:bg-clip-text dark:bg-linear-to-r from-0% from-black/84 via-white  to-black/84 text-neutral-6 text-2xl md:text-[40px] font-bold">
+              <h2 className="dark:text-transparent dark:bg-clip-text dark:bg-linear-to-r from-0% from-black/84 via-white  to-black/84 text-neutral-6 text-2xl md:text-[40px] font-bold">
                 Who We Are
-              </h1>
+              </h2>
               <p className="dark:text-neutral-4 text-neutral-5 text-[14px]">
                 We are{" "}
                 <span className="text-primary-5 font-bold">intentional</span>{" "}
